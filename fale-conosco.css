@@ -1,0 +1,22 @@
+*{
+    margin:0%;
+    padding: 0%;
+
+}
+
+.contato{
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#area{
+
+    width: 500px;
+    height: 200px;
+
+}
+
+.footer{ 
+    text-align: center;
+}
+

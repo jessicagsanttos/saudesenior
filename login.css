@@ -1,0 +1,43 @@
+
+    *{
+        margin: 0px;
+        padding: 0px;
+        list-style:none ;
+        font-size: 1.2rem;
+        font-family: Arial;
+    }
+    h1{text-align: center;}
+    .container{background-color: white;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 10px;
+        align-items: center;
+    
+    }
+    .botao{
+      text-align: center;
+    }
+    
+    input[type=text] {
+      height: 19px;
+      width: 290px;
+      }
+    form{
+      display:block;
+      text-align: center;
+    
+    }
+    .conta{
+      text-align: center;
+    }
+    .campo {
+      font-size: 20px;
+      margin-bottom: 1em;
+      display: block;
+    }
+    
+    input {
+      height: 50px;
+      width: 500px;    
+    }

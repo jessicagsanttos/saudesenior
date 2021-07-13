@@ -1,0 +1,18 @@
+body,ul,li,p{
+    margin: 0px;
+    padding: 0px;
+    list-style:none ;
+    font-size: 1.0rem;
+    
+}
+
+footer{
+    text-align: center;
+}
+.coluna{display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+
+}

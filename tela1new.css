@@ -1,0 +1,36 @@
+
+
+body {
+    height: 100%;
+    font-size: 1rem;
+}
+
+
+
+.gradient {
+
+    background: rgb(53,196,63);
+background: linear-gradient(90deg, rgba(53,196,63,1) 47%, rgba(39,125,31,1) 100%);
+}
+
+.page-header { 
+    margin-top: 4rem;
+    font-size: 1.25rem;
+    color: black;
+    text-shadow: white 0.1em 0.1em 0.2em;
+    font-family: sans-serif;
+}
+
+.buscacep{
+    text-align: center;
+    text-shadow: none;
+    font-family: sans-serif;
+}
+
+.footer{
+    text-align: center;
+    border-radius: 5px;
+}
+.faleconosco{
+    text-align: center;
+}

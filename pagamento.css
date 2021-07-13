@@ -1,0 +1,47 @@
+body{ 
+    margin: 0%;
+    padding: 0%;
+} 
+
+.form-radio{
+    padding: 10px;
+    margin-left: 40px;
+}
+
+.formularioboleto{
+    padding: 30px 30px 30px 50px;
+    width: 50%;
+    float: left;
+}
+
+.formulariocartao{
+    padding: 30px 30px 30px 50px;
+    width: 50%;
+    float: right;
+    
+}
+
+
+
+footer{
+    
+    text-align: center;
+   
+    
+       
+}
+
+.nomeboleto{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+h6{
+    text-align: center;
+}
+
+.fieldboleto{
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+}

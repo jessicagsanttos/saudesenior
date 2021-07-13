@@ -1,0 +1,28 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.nossahistoria{
+    text-align: center;
+    background-color: black;
+    font-family: yellowtail;
+    color: white;
+
+}
+.historia{
+    text-align: center;
+    font-size: 40px;
+    
+}
+
+.footer{
+    text-align: center;
+}
+
+#texto{
+    font-size: 30px;
+    margin: 5rem;
+    padding: 5rem;
+    background-color: black;
+}

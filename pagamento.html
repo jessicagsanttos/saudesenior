@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Pagamento</title>
+    <meta charset="utf-8">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="pagamento.css" media="screen" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <script src="pagamento.js"></script>
+  </head>
+  
+<script>
+  $(function() {
+      
+    $('#radio-boleto').click(
+        function(){
+          $('#idFormularioBoleto').show(); 
+          $('#idFormularioCartao').hide();
+        }  
+    );
+
+    $('#radio-cartao').click(
+        function(){
+          $('#idFormularioBoleto').hide(); 
+          $('#idFormularioCartao').show();  
+
+        }  
+    );
+
+    $('#idFormularioBoleto').hide();    
+  
+
+
+  });
+
+</script>
+
+  <body>
+   <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img src="img/logo-1.png" alt="Imagem da logo">
+        
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+            <a class="nav-link" href="tela1new.html"> <strong> Início </strong> <span class="sr-only">(current)</span></a>
+            </li>
+            
+            <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <strong> Selecione a especialidade</strong>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Cuidadores</a>
+                <a class="dropdown-item" href="pesquisa.html">Médicos</a>
+                <a class="dropdown-item" href="#">Enfermeiros</a>
+                <a class="dropdown-item" href="#">Fisioterapeutas</a>
+                <a class="dropdown-item" href="#">Psicólogos</a>
+
+
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="cadastro-profissional1.html">Sou profissional</a>
+            </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="fale-conosco.html"> <strong>Fale Conosco</strong> </a>
+            </li>
+            
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search"  aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+        </form>
+        </div>
+    </nav>
+    
+   </header>
+
+   <h6>Formas de Pagamento</h6>
+
+    <div class="form-radio" >
+     <label for="radio-boleto"><input type="radio" name="pagamento" value="boleto" id="radio-boleto"><img src="img/boleto.png">Boleto</label> 
+    
+    </div>
+
+    <div class="form-radio">
+      <label for="radio-cartao"><input type="radio" name="pagamento" value ="cartao" id="radio-cartao" checked><img src="img/bandeiras.png">Cartão</label> 
+         
+    </div>
+
+    
+
+    
+     
+
+    <fieldset class="pagamento"> 
+      <div id="idFormularioBoleto" class="formularioboleto">
+        <form class="form-horizontal" role="form">
+          <fieldset class="fieldboleto">
+            <legend>Boleto</legend>
+
+            <div class="nomeboleto">
+              <label class="col-sm-3 control-label" for="Nome Completo">Nome</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" name="Nome do Titular" required="Por favor, preecha este campo" id="Nome do Titular" placeholder="Nome Completo">
+              </div>
+
+            </div>
+            <div class="cpf">
+              <label class="col-sm-3 control-label" for="numero do cpf">CPF</label>
+              <div class="col-sm-9">
+              <input type="text" class="form-control" name="numero do cpf" required="Por favor, preecha este campo" id="numero do cpf" placeholder="000.000.000-00">
+              </div>
+            </div>
+
+            <div class="telefone">
+              <label class="col-sm-3 control-label" for="numero do telefone">Telefone</label>
+              <div class="col-sm-9">
+              <input type="text" class="form-control" name="numero do telefone" required="Por favor, preecha este campo" id="numero do telefone" placeholder="(00) 0000-0000">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="col-sm-offset-3 col-sm-9">
+                <a href="tela1new.html"> <button type="button" class="btn btn-success" onclick="alert('Boleto enviado para e-mail de cadastro')">Gerar boleto</button></a>
+              </div>
+            </div>
+        </div>
+            
+            
+    </fieldset>
+      
+     
+
+  <fieldset> 
+    <div id="idFormularioCartao"  class="formularioboleto">
+      <form class="form-horizontal" role="form">
+        <fieldset class="fieldboleto">
+          <legend>Cartão</legend>
+          <div class="nomecartao">
+            <label class="col-sm-3 control-label" for="Nome do Titular">Nome no cartão</label>
+            <div class="col-sm-9">
+              <input type="text" class="form-control" name="Nome do Titular" required="Por favor, preecha este campo" id="Nome do Titular" placeholder="Nome do titular do Cartão">
+            </div>
+          </div>
+          <br>
+          <div class="numerocartao">
+            <label class="col-sm-3 control-label" for="numero do cartao">Número do cartão</label>
+            <div class="col-sm-9">
+            <input type="text" class="form-control" name="numero do cartao" required="Por favor, preecha este campo" id="numero do cartao" placeholder="Número do cartão de débito/crédito">
+            </div>
+          </div>
+          <br>
+          <div class="form-group">
+            <label class="col-sm-3 control-label" for="mes de vencimento">Data de Expiração</label>
+            <div class="col-sm-9">
+              <div class="row">
+                <div class="col-xs-3">
+                  <select class="form-control" name="mes de expiracao" required="Por favor, preecha este campo" id="mes de vencimento">
+                    <option value="">Mês</option>
+                    <option value="01">Janeiro</option>
+                    <option value="02">Fevereiro</option>
+                    <option value="03">Março</option>
+                    <option value="04">Abril</option>
+                    <option value="05">Maio</option>
+                    <option value="06">Junho</option>
+                    <option value="07">Julho</option>
+                    <option value="08">Agosto</option>
+                    <option value="09">Setembro</option>
+                    <option value="10">Outubro</option>
+                    <option value="11">Novembro</option>
+                    <option value="12">Dezembro</option>
+                  </select>
+                </div>
+                <div class="col-xs-3">
+                  <select class="form-control" name="ano de expiracao" required="Por favor, preecha este campo" id="ano de vencimento">
+                    <option value="">Ano</option>
+                    <option value="21">2021</option>
+                    <option value="22">2022</option>
+                    <option value="23">2023</option>
+                    <option value="24">2024</option>
+                    <option value="25">2025</option>
+                    <option value="26">2026</option>
+                    <option value="27">2027</option>
+                    <option value="28">2028</option>
+                    <option value="29">2029</option>
+                    <option value="30">2030</option>
+                    <option value="31">2031</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="form-group">
+            <label class="col-sm-3 control-label" for="cvv">CVV</label>
+            <div class="col-sm-3">
+              <input type="text" class="form-control" name="cvv" required="Por favor, preencha este campo" id="cvv" placeholder="Código de Segurança">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-3 col-sm-9">            
+              <a href="tela1new.html"> <button type="button" class="btn btn-success" onclick="alert('Confirmação de pagamento enviada para e-mail de cadastro')"> Confirmar pagamento</button></a>
+            </div>
+          </div>
+        </div>
+     
+    </form>
+   </div>
+  </fieldset>
+
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    
+   
+   <footer>
+    <h6 class="footer" >www.saudesenior.com.br © 2021</h6>
+   </footer>    
+  </body>
+</html>
+

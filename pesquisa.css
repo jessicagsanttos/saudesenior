@@ -1,0 +1,35 @@
+*{ 
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+footer{
+    text-align: center;
+}
+
+.class{
+    text-align: center;
+    justify-content:center;
+}
+
+.card-body{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 50rem;
+    
+    
+    
+}
+
+
+#geral{
+    top: 10px;
+    left: 560px;
+    width: 800px;
+    min-height: 500px;
+    height: auto;
+    position: relative;
+}
